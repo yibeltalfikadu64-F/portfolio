@@ -1,0 +1,103 @@
+/* Mobile First Approach */
+
+/* Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .container-custom {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .grid-cols-responsive {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Mobile (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .container-custom {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .grid-cols-responsive {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .grid-cols-responsive {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .container-custom {
+    max-width: 1200px !important;
+  }
+}
+
+/* Large Desktop (1441px+) */
+@media (min-width: 1441px) {
+  .container-custom {
+    max-width: 1400px !important;
+  }
+  
+  .section-title {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) and (max-height: 600px) {
+  .hero-section {
+    min-height: auto !important;
+    padding: 4rem 0 !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .glass-effect {
+    backdrop-filter: none !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
